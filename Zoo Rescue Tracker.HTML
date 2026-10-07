@@ -1,0 +1,76 @@
+<!--In this assignment, you will create a webpage called Zoo Rescue Tracker. This webpage helps students understand how CSS positioning controls where elements appear on a page.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Rescue Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .fixed-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .pet-of-the-month {
+            position: relative;
+            left: 20px;
+            margin-top: 100px;
+        }
+        .adopted-card {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .adopted-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: white;
+            padding: 0.5rem;
+        }
+        .sticky-label {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-bar">
+        <h1>Zoo Rescue Tracker</h1>
+    </header>
+    <main>
+        <section class="pet-of-the-month">
+            <h2>Rescue of the Month</h2>
+            <p>Meet Leo, the rescued lion who is now thriving in our sanctuary.</p>
+        </section>
+        <section class="adopted-card">
+            <div class="adopted-badge">Adopted</div>
+            <h2>About Leo</h2>
+            <p>Leo was rescued from a difficult situation and now enjoys a safe and loving environment.</p>
+        </section>
+        <section class="sticky-label">
+            <h2>More About Leo</h2>
+            <p>Leo loves to play with his enrichment toys and interact with the caretakers.</p>
+        </section>
+    </main>
+    <footer class="fixed-bar">
+        <p>&copy; 2024 Zoo Rescue Tracker</p>
+    </footer>
+</body>
+</html>
